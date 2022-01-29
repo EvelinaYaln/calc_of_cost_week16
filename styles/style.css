@@ -64,12 +64,6 @@ form div input {
     margin-right: 15px;
 }
 
-#showPassword {
-    height: 17px;
-    width: 17px;
-    margin-right: 10px;
-}
-
 #age1 {
     margin-top: 20px;
 }
@@ -78,6 +72,17 @@ form div input {
 #age2,
 #age3 {
     margin-right: 10px;
+}
+
+#sedan,
+#cabriolet,
+#crossover,
+#mini {
+    margin-right: 10px;
+}
+
+#sedan {
+    margin-top: 20px;
 }
 
 input.font-size-small {
@@ -95,7 +100,7 @@ input.font-size-small {
 }
 
 input.border:focus {
-    outline-color: yellow;
+    outline-color: rgb(0, 26, 255);
 }
 
 input.font-size-small:hover {
