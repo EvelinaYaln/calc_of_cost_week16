@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Изучение JavaScript</title>
+    <link href="styles/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <form>
+        <h2>Калькулятор расчета стоимости автомобиля</h2>
+        <label class="font-size-big" for="carModel">Марка автомобиля:</label>
+        <select class="border" id="carModel">
+            <option disabled>Марка автомобиля</option>
+            <option>Audi</option>
+            <option>Aston Martin</option>
+            <option>Bentley</option>
+            <option>BMW</option>
+            <option>Porsche</option>
+        </select>
+        <label class="font-size-big"> Возраст автомобиля:
+        <label class="font-size-big" for="age1"><input  type="radio" id="age1" name="age" value="less_1" checked>Менее 1 года</label>
+        <label class="font-size-big" for="age2"><input  type="radio" id="age2" name="age" value="from_1_to_5">От 1 до 5 лет</label>
+        <label class="font-size-big" for="age3"><input  type="radio" id="age3" name="age" value="from_5_to_10">От 5 до 10 лет</label>
+        </label>
+        <label class="font-size-big" for="mileage">Пробег:</label>
+        <input class="border" type="number" name="mileage" id="mileage" placeholder="Пробег вашего автомобиля в км">
+        <label class="font-size-big"> Тип кузова:
+        <label class="font-size-big" for="sedan"><input  type="radio" id="sedan" name="bodyType" value="sedan" checked>Седан</label>
+        <label class="font-size-big" for="cabriolet"><input  type="radio" id="cabriolet" name="bodyType" value="cabriolet">Кабриолет</label>
+        <label class="font-size-big" for="crossover"><input  type="radio" id="crossover" name="bodyType" value="crossover">Внедорожник</label>
+        <label class="font-size-big" for="mini"><input  type="radio" id="mini" name="bodyType" value="mini">Минивэн</label>
+        </label>
+
+        <div id="cost"></div>
+        <input class="font-size-small" id="cost" type="button" value="Расчитать стоимость" onclick="check()">
+    </form>
+
+    <script src="js/index.js">
+    </script>
+</body>
+
+</html>
